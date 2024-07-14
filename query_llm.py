@@ -34,19 +34,8 @@ def query_rag(query):
     response = model.generate_content(prompt)
 
     srcs = [doc.metadata.get("id", None) for doc, _score in res]
-    formatted_response = f"Response: {response.text}\nSources: {srcs}"
-    print(formatted_response)
-    return response
-
-
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("query", type=str, help="The user input")
-    args = parser.parse_args()
-    query = args.query
-    query_rag(query)
-
-if __name__ == "__main__":
-    main()
+    formatted_response = {
+        "response": response.text,
+        "sources": srcs
+    }
+    return formatted_response
