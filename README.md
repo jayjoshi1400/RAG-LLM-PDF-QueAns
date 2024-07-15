@@ -5,7 +5,6 @@ This project implements an efficient Retrieval-Augmented Generation (RAG) based 
 ## Table of Contents
 - Installation
 - Usage
-- Endpoints
 - Functionality
 
 # Installation
