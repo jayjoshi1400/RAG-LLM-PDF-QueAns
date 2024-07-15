@@ -1,6 +1,6 @@
 # RAG-LLM-PDF-QueAns
 
-This project implements an efficient Retrieval-Augmented Generation (RAG) based Language Model (LLM) that indexes document chunks by source and page number. It includes a redundant document checker using SQL to prevent unnecessary processing. The system utilizes FastAPI to develop REST APIs, providing an end-to-end solution for document processing and querying.
+This project implements an efficient Retrieval-Augmented Generation based LLM (Gemini Pro - 1.5) using a vector database (chroma DB) that indexes document chunks by source and page number. It includes a redundant document checker using SQL to prevent unnecessary processing. The system utilizes FastAPI to develop REST APIs, providing an end-to-end solution for document processing and querying.
 
 ## Table of Contents
 - Installation
